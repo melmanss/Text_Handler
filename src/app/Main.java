@@ -11,6 +11,7 @@ public class Main {
         String newFileName = "myfile";
         String content = "Super information.";
         String path = BASE_PATH + newFileName + ".txt";
+
         // Виклики методів маніпуляції з файлом
         getOutput(handler.createFile(path));
         getOutput(handler.writeToFile(Paths.get(path), content));
@@ -21,4 +22,3 @@ public class Main {
         System.out.println(output);
     }
 }
-
